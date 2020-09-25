@@ -1,0 +1,104 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="60dp"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/llMainStatic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="0dp"
+        android:elevation="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llNewStatic"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNewStatic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background_shape"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="10"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llOldStatic"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvOldStatic"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="-30dp"
+                android:background="@drawable/background_shape"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="9"
+                android:textSize="30sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llNewDynamic"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/llMainStatic"
+        app:layout_constraintEnd_toEndOf="@+id/llMainStatic"
+        app:layout_constraintStart_toStartOf="@+id/llMainStatic">
+
+        <TextView
+            android:elevation="1dp"
+            android:id="@+id/tvNewDynamic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="-30dp"
+            android:background="@drawable/background_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:rotationX="90"
+            android:text="10"
+            android:textSize="30sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llOldDynamic"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:elevation="1dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/llMainStatic"
+        app:layout_constraintStart_toStartOf="@+id/llMainStatic"
+        app:layout_constraintTop_toTopOf="@+id/llMainStatic">
+
+        <TextView
+            android:id="@+id/tvOldDynamic"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/background_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="9"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
