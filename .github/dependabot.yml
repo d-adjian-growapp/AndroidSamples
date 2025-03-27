@@ -8,3 +8,7 @@ updates:
     directory: "/app/" # Location of package manifests
     schedule:
       interval: "daily"
+registries:
+  google:
+    type: "maven-repository"
+    url: "https://maven.google.com"
